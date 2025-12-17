@@ -29,7 +29,7 @@
     h1{
       margin:0 0 6px;
       font-size:22px;
-      text-transform: lowercase;
+      line-height:1.2;
     }
     p{
       margin:0 0 16px;
@@ -45,6 +45,7 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
+      gap:12px;
       padding:14px 16px;
       border-radius:12px;
       text-decoration:none;
@@ -63,12 +64,10 @@
       transform:translateY(0);
       box-shadow:none;
     }
-    .arrow{ opacity:.6; }
+    .arrow{ opacity:.6; white-space:nowrap; }
 
     @media (min-width: 520px){
-      .grid{
-        grid-template-columns:1fr 1fr;
-      }
+      .grid{ grid-template-columns:1fr 1fr; }
     }
   </style>
 </head>
@@ -80,19 +79,21 @@
 
     <section class="grid">
       <a class="btn" href="PASTE_VIDEO_TUTORIAL_LINK_HERE" target="_blank" rel="noopener">
-        🎥 Video Tutorial <span class="arrow">↗</span>
+        Video Tutorial <span class="arrow">↗</span>
       </a>
 
-      <a class="btn" href="PASTE_LESSON_PLAN_TEMPLATE_LINK_HERE" target="_blank" rel="noopener">
-        📝 Lesson Plan Templates <span class="arrow">↗</span>
+      <!-- Local PDF download (put the PDF file in the same folder as this HTML) -->
+      <a class="btn" href="files/lesson-plan-templates.pdf" download>
+        Lesson Plan Templates <span class="arrow">Download ⬇</span>
       </a>
 
-      <a class="btn" href="PASTE_SAMPLE_IDEAS_LINK_HERE" target="_blank" rel="noopener">
-        💡 Lesson Plan Samples <span class="arrow">↗</span>
+      <!-- Local PDF download -->
+      <a class="btn" href="files/lesson-plan-samples.pdf" download>
+        Lesson Plan Samples <span class="arrow">↗</span>
       </a>
 
-      <a class="btn" href="PASTE_FEEDBACK_LINK_HERE" target="_blank" rel="noopener">
-        📋 Feedback <span class="arrow">↗</span>
+      <a class="btn" href="https://forms.gle/dJ3RuK2W7Zcx5S328" target="_blank" rel="noopener">
+        Feedback <span class="arrow">↗</span>
       </a>
     </section>
   </main>
